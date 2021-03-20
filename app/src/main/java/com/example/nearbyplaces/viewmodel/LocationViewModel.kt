@@ -33,4 +33,5 @@ class LocationViewModel(application: Application) : ViewModel() {
             repository.callApiFromRepo(location, keyword)
         }
     }
+
 }

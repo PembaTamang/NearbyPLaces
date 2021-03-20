@@ -1,5 +1,6 @@
 package com.example.nearbyplaces.models
 import com.google.gson.annotations.SerializedName
+
 /*
 Copyright (c) 2021 Kotlin Data Classes Generated from JSON powered by http://www.json2kotlin.com
 
@@ -12,20 +13,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 
-data class Results (
-
-	@SerializedName("business_status") val business_status : String,
-	@SerializedName("geometry") val geometry : Geometry,
-	@SerializedName("icon") val icon : String,
-	@SerializedName("name") val name : String,
-	@SerializedName("opening_hours") val opening_hours : Opening_hours,
-	@SerializedName("photos") val photos : List<Photos>?,
-	@SerializedName("place_id") val place_id : String,
-	@SerializedName("plus_code") val plus_code : Plus_code,
-	@SerializedName("rating") val rating : Double,
-	@SerializedName("reference") val reference : String,
-	@SerializedName("scope") val scope : String,
-	@SerializedName("types") val types : List<String>,
-	@SerializedName("user_ratings_total") val user_ratings_total : Int,
-	@SerializedName("vicinity") val vicinity : String
+data class Photos (
+	@SerializedName("height") val height : Int,
+	@SerializedName("html_attributions") val html_attributions : List<String>,
+	@SerializedName("photo_reference") val photo_reference : String,
+	@SerializedName("width") val width : Int
 )
